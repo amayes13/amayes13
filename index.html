@@ -113,7 +113,7 @@
         const card = document.getElementById('rotatingCard');
         let isFlipped = false;
 
-        card.addEventListener('click', function () {
+        card.addEventListener('touchstart', function () {
             isFlipped = !isFlipped;
             card.style.transform = isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)';
         });
